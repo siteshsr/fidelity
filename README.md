@@ -3,4 +3,3 @@
 ![Screenshot 2024-10-01 001117](https://github.com/user-attachments/assets/b8a21f5a-0e5e-4510-8281-6dc6d4abdfc7)
 ![Screenshot 2024-10-07 163305](https://github.com/user-attachments/assets/9674a77e-d748-45cd-a407-4ffe4f892be8)
 ![Screenshot 2024-10-07 160714](https://github.com/user-attachments/assets/ef07e1a7-dbe4-4cd9-ad1c-40c2c088b175)
-# To see the output [CLICK HERE](https://github.com/siteshsr/fidelity/tree/main/assessment%203/A.C%20Mentanance/)
