@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookzone Library Form</title>
+</head>
+<body>
+    <h1>Bookzone Library- Book Form</h1>
+
+    <form id="bookform" autocomplete="on">
+        <fieldset>
+            <legend>Customer Info</legend>
+            <label for="cusname">Name:</label>
+            <input type="text" id="cusname" name="cusname" placeholder="Enter your name" autofocus required><br><br>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Pattern: 234-567-8910"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+            <label for="mail">Email Address:</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email address" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <level for="book">Books:</level>
+            <input list="books" id="book" name="book" placeholder="Enter A Book Name" required> 
+            <datalist id="books">
+                <option value="HTML5-Bruce Lawson and Remy Sharp">
+                <option value="HTML5- Up and Running- Mark Pilgtim">
+                    <option value="Head First HTML5 Programming-Eric Freeman">
+                        <option value="Mastering HTMl, CSS and JavaScript-Laura Lemay">
+            </datalist><br><br>
+            <level for="quantity">Quantity(Maximum 5):</level>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required><br><br>
+        </fieldset>
+
+        <input type="submit" name="submit" vakue="Submit">
+    </form>
+
+    <script>
+        document.getElementById('bookform').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert('You have successfully submitted the Book Form;')
+        });
+    </script>
+</body>
+</html>
