@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Using CSS Grid and Carousel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS Grid for Blog Layout */
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .blog-sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .blog-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 20px;
+        }
+
+        .post h2 {
+            font-size: 24px;
+        }
+
+        .post p {
+            font-size: 16px;
+        }
+
+        /* Keyframes for post animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .post {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Carousel Styling */
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blog Layout with CSS Grid -->
+    <div class="blog-container">
+        <div class="blog-sidebar">
+            <h2>About Me</h2>
+            <p>This is the sidebar content. You can include author bio, recent posts, or anything you like.</p>
+        </div>
+        
+        <div class="blog-content">
+            <div class="post">
+                <h2>First Blog Post</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultricies est. Fusce id ligula nunc.</p>
+            </div>
+            <div class="post">
+                <h2>Second Blog Post</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultricies est. Fusce id ligula nunc.</p>
+            </div>
+            
